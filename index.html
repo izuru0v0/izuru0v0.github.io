@@ -1,9 +1,23 @@
 <!DOCTYPE html>
 <html>
 
+<head>
+    <title>UPLOAD AND DOWNLOAD</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+
 <body>
-    <h1>Hello World</h1>
-    <p>I'm hosted with GitHub Pages.</p>
+    <h1>UPLOAD AND DOWNLOAD</h1>
+    <textarea id="textInput" rows="4" cols="50"></textarea>
+    <button onclick="uploadText()">UPLOAD</button>
+    <div id="displayArea"></div>
+
+    <script>
+        function uploadText() {
+            var text = $("#textInput").val();
+            $("#displayArea").text(text);
+        }
+    </script>
 </body>
 
 </html>
